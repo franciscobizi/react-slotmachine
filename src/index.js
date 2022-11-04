@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets//css/index.css';
-import App from './App';
+import './index.css';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
+import Machine from './Machine';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Machine />
   </React.StrictMode>,
   document.getElementById('root')
 );

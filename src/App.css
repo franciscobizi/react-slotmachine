@@ -1,0 +1,94 @@
+h1 {  
+  margin-bottom: 5%;
+  font-size: 3rem;
+  color: #ffffff; 
+  font-family: 'Cairo', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.Slot-Machine{
+  width: 16%;
+  padding: 2%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+.slot-prizes{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.slot {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 80px;
+}
+
+section {
+  position: absolute;
+  border-radius: 15px !important;
+  border: 3px solid black !important;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: default;
+}
+
+.gradient-fade {
+  position: absolute;
+  display: none;
+  top: 0px;
+  right: 6px;
+  bottom: 24px;
+  left: 2px;
+  z-index: 10;
+  background: linear-gradient( rgba(64,64,64,1) 13%, rgba(64,64,64,0) 7%, rgba(64,64,64,0) 18%, rgba(64,64,64,1) 100% );
+}
+.gradient-fade.running{display: block;}
+.container {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  transition: top ease-in-out 0.3s;
+  text-align: center;
+}
+.container.running{opacity: 0;}
+.roll {
+  cursor: pointer;
+  background-color: #e0e0e0;;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.rolling {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: #000;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+}
